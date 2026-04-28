@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+import '../../layouts/header/header.dart';
+import '../../layouts/sidebar/sidebar.dart';
+
+class TabletLayout extends StatelessWidget {
+  TabletLayout({
+    super.key,
+    this.body,
+    required this.currentPageIndex,
+    required this.onItemSelected,
+  });
+  final Widget? body;
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+  final int currentPageIndex;
+  final dynamic Function(int) onItemSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      drawer: CustomSidebar(
+        currentPageIndex: currentPageIndex,
+        onItemSelected: onItemSelected,
+      ),
+      appBar: CustomHeader(scaffoldKey: scaffoldKey),
+      body: body ?? const SizedBox(),
+    );
+  }
+}

@@ -1,0 +1,34 @@
+{
+ "validators": {
+    "field": "Field",
+    "required": "{} is required",
+    "email_required": "Email is required",
+    "email_invalid": "Invalid email address",
+    "password_required": "Password is required",
+    "password_short": "Password must be at least 8 characters",
+    "price_required": "Price is required",
+    "price_invalid": "Invalid price",
+    "price_zero": "Price must be greater than 0",
+    "stock_required": "Stock is required",
+    "stock_invalid": "Invalid stock value",
+    "stock_negative": "Stock cannot be negative",
+    "phone_required": "Phone number is required",
+    "phone_invalid": "Invalid phone number"
+  },
+  "sidebar" : {
+    "general": "General",
+    "dashboard": "Dashboard",
+    "product": "Product",
+    "sneakers": "Sneakers",
+    "jacket": "Jacket",
+    "t_shirt": "T-Shirt",
+    "bag": "Bag",
+    "transaction": "Transaction",
+    "customers": "Customers",
+    "sales_report": "Sales Report",
+    "tools": "Tools",
+    "account_settings": "Account & Settings",
+    "help": "Help",
+    "dark_mode": "Dark Mode"
+  }
+}
